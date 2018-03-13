@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WheeDaFood?</title>
+    <title>WhereDaFood?</title>
 
     <link rel="stylesheet" href="css/wheredafood.css">
 </head>
+
 <body>
+    <form>
+        <button id="test">WhereDaMap?</button>
+    </form>
+
+    <div id="floating-panel">
+        <input type="button" value="Toggle Street View" onclick="toggleStreetView();"></input>
+    </div>
+    <div id="map"></div>
     
     <script src="js/google.api.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYpPpsOQYeTdlW_5CL09rBKHsXSbkrto&callback=initMap"></script>
 </body>
+
 </html>
