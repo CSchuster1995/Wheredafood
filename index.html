@@ -14,12 +14,13 @@
     <form>
         <button id="test">WhereDaMap?</button>
     </form>
-
-    <div id="floating-panel">
-        <input type="button" value="Toggle Street View" onclick="toggleStreetView();"></input>
+    <div class="container">
+        <div id="floating-panel">
+            <input type="button" value="Toggle Street View" onclick="toggleStreetView();"></input>
+        </div>
+        <div id="map"></div>
     </div>
-    <div id="map"></div>
-    
+
     <script src="js/google.api.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYpPpsOQYeTdlW_5CL09rBKHsXSbkrto&callback=initMap"></script>
 </body>
