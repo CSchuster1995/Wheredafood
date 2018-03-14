@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- testing -->
 
 <head>
     <meta charset="UTF-8">
@@ -23,14 +22,40 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6">
-                <img src="images/american.jpeg" alt="american">
+                <a href="#modalMap" role="button" data-toggle="modal">
+                    <img src="images/american.jpeg" alt="american">
+                </a>
             </div>
             <div class="col-lg-6">
-                <img src="images/mexican.jpeg" alt="mexican">
+                <a href="#modalMap" role="button" data-toggle="modal">
+                    <img src="images/italian.jpeg" alt="american">
+                </a>
             </div>
         </div>
     </div>
-
+    <div class="modal fade" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">American Food</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <iframe
+                        width="460"
+                        height="450"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=pizza+in+77070" allowfullscreen>
+                      </iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -39,19 +64,9 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="js/google.api.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYpPpsOQYeTdlW_5CL09rBKHsXSbkrto&callback=initMap"></script>
+    
+
+    
 </body>
 
 </html>
-
-
-
-
-
-
-<!-- Map insert code
-<div id="floating-panel">
-    <input type="button" value="Toggle Street View" onclick="toggleStreetView();"></input>
-</div>
-<div id="map"></div> -->
