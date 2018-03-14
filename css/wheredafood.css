@@ -22,8 +22,7 @@
   #floating-panel {
     margin-left: -100px;
   }
+.customFont {
+    font-family: 'Lobster', cursive;
+}
 
-  .container {
-      width: 500px;
-      height: 500px;
-  }
