@@ -9,15 +9,53 @@
  <link rel="stylesheet" href="css/wheredafood.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="css/WhereDaFoodFrontPage.css">
 </head>
 
-<body>      
-    <div class="container">
-        <div id="floating-panel">
-            <input type="button" value="Toggle Street View" onclick="toggleStreetView();"></input>
+<body>   
+       
+    
+    <div class"row"><div class="title" style= "font-family: lato; font-size:100px; text-align:center; color:rgb(87, 51, 10)">WhereDaFood?</style>
         </div>
-        <div id="map"></div>
     </div>
+
+        
+
+
+
+    <div class="table container">
+            <div class="row">
+                <div class="col-sm-3"><p>Chinese Food</p>
+                <img src= "pictures/ChineseFood.jpg" id="chineseImg"> 
+                </div>
+                <div class="col-sm-3"><p>Italian Food</p>
+                <img src= "pictures/ItalianFood.jpeg" id ="italianImg">
+                </div>
+                <div class="col-sm-3"><p>Japanese Food</p>
+                <img src= "pictures/japaneseFood.jpg" id="japaneseImg">
+              </div>
+            </div>  
+            <div class="row">
+                <div class= "col-sm-3"><p>Indian Food</p>
+                <img src= "pictures/IndianFood.jpg" id="indianImg">
+            </div>
+                <div class="col-sm-3"><p>Thai Food</p>
+                <img src= "pictures/ThaiFood.jpg" id="thaiImg">
+                </div>
+                <div class="col-sm-3"><p>Mediterranean Food</p>
+                <img src= "pictures/mediterranean.jpg" id="medImg">
+
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+   
+    <script src="js/WhereDaFoodFrontPage.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -27,11 +65,11 @@
     <script src="js/google.api.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYpPpsOQYeTdlW_5CL09rBKHsXSbkrto&callback=initMap"></script>
 
-    <div id="Chinese Food">
+    
     
 
 
-    </div>
+ 
 
 
 

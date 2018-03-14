@@ -87,3 +87,13 @@ function toggleStreetView() {
         panorama.setVisible(false);
     }
 }
+
+
+
+var imageC = document.getElementById('chineseFoodImg');
+  
+imageC.addEventListener('click', function(){
+
+    //your code for google response
+    //write code for google location of chinese restaurants
+})
