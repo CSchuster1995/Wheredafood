@@ -39,12 +39,38 @@ chinese.addEventListener('click', function() {
 
 
 // Zomato API
-(function() {
 
-var url = "https://developers.zomato.com/api/v2.1/cities?q=" + loc
+
 var zomKey = "bd5dfbb9276d36c0b9e8c4e99625e114";
+var newData = "";
 
+$(document).ready(function () {
+    $.ajax({
+        url: "https://developers.zomato.com/api/v2.1/cities?q=" + loc,
+        type: "GET",
+        dataType: "json",
+        headers: { "user-key": "bd5dfbb9276d36c0b9e8c4e99625e114" },
+        success:function(data){
+            
+            newData = data.location_suggestions[0].id;
 
-
-})();
+            $(document).ready(function () {
+                $.ajax({
+                    url: "https://developers.zomato.com/api/v2.1/search?entity_id=" + newData + "&entity_type=city&establishment_type=81",
+                    type: "GET",
+                    dataType: "json",
+                    headers: { "user-key": "bd5dfbb9276d36c0b9e8c4e99625e114" },
+                    success:function(data){
+                        newList = data;
+                        
+                    },
+                    
+                }); 
+            });
+            
+        },
+        
+    }); 
+});
+var newList = "";
 
