@@ -6,75 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WhereDaFood?</title>
- <link rel="stylesheet" href="css/wheredafood.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="css/WhereDaFoodFrontPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="css/wheredafood.css">
+    
+
+
+<style type="text/css">
+    
+    img:hover {
+        background-color: RGB(0, 128, 100);
+        border-color: RGB(0, 128, 100);
+    }
+</style>
+
+
 </head>
 
-<body>   
-       
-    
-    <div class"row"><div class="title" style= "font-family: lato; font-size:100px; text-align:center; color:rgb(87, 51, 10)">WhereDaFood?</style>
+<body style = "background-color: rgb(206, 142, 132);">
+
+    <div class="jumbotron customFont" style="color:white; background-color: rgb(206, 142, 132)">
+        <div class="container">
+            <p class="display-4" style="text-align: center" ; font-size="60px"; font-family >WhereDaFood?</p>
+            <p class="lead" style= "text-align: center">Choose a restaurant. Click a picture</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="#modalMap" id="american" role="button" data-toggle="modal">
+                    <img src="images/american.jpeg" alt="american" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">AMERICAN</p>
+                </a>
+            </div>
+
+             <div class="col-lg-6">
+                <a href="#modalMap" id="mexican" role="button" data-toggle="modal">
+                    <img src="images/mexican.jpeg" alt="mexican" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">MEXICAN</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="#modalMap" id="indian" role="button" data-toggle="modal">
+                    <img src="images/indian.jpeg" alt="american" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">INDIAN</p>
+                </a>
+            </div>
+
+
+            <div class="col-lg-6">
+                <a href="#modalMap" id="chinese" role="button" data-toggle="modal">
+                    <img src="images/chinese.jpeg" alt="chinese" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">CHINESE</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="#modalMap" id="italian" role="button" data-toggle="modal">
+                    <img src="images/italian.jpeg" alt="italian" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">ITALIAN</p>
+                </a>
+            </div>
+            
+                
+            <div class="col-lg-6">
+                <a href="#modalMap" id="mongolian" role="button" data-toggle="modal">
+                    <img src="images/mongolian.jpeg" alt="mongolian" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">MONGOLIAN</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6">              
+                <a href="#modalMap" id="greek" role="button" data-toggle="modal">
+                    <img src="images/greek food.jpg" alt="greek" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">GREEK</p>
+                </a>
+            </div>
+            
+            <div class="col-lg-6">
+                <a href="#modalMap" id="thai" role="button" data-toggle="modal">
+                    <img src="images/thai.jpeg" alt="thai" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">THAI</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="#modalMap" id="african" role="button" data-toggle="modal">
+                    <img src="images/african.jpg" alt="african" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">AFRICAN</p>
+                </a>
+            </div>
+                
+            <div class="col-lg-6">
+                <a href="#modalMap" id="vegan" role="button" data-toggle="modal">
+                    <img src="images/vegan.jpeg" alt="vegan" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">VEGAN</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="#modalMap" id="brazilian" role="button" data-toggle="modal">
+                    <img src="images/brazilian.jpeg" alt="brazilian" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">BRAZILIAN</p>
+                </a>
+            </div>
+                
+            <div class="col-lg-6">
+                <a href="#modalMap" id="german" role="button" data-toggle="modal">
+                    <img src="images/german.jpeg" alt="german" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">GERMAN</p>
+                </a>
+            </div>
+        </div>  
+                
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="#modalMap" id="cuban" role="button" data-toggle="modal">
+                    <img src="images/cuban.jpeg" alt="cuban" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">CUBAN</p>
+                </a>
+            </div>
+                
+            <div class="col-lg-6">
+                <a href="#modalMap" id="french" role="button" data-toggle="modal">
+                    <img src="images/french.jpeg" alt="french" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">FRENCH</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="#modalMap" id="caribbean" role="button" data-toggle="modal">
+                    <img src="images/caribbean.jpeg" alt="caribbean" class="img-responsive img-thumbnail" style = "height: 500px; width: 700px;">
+                    <p style="text-align:center; color: rgb(20, 89, 100); font-weight: bold;">CARIBBEAN</p>
+                </a>
+            </div>
+        </div>  
+                
+        </div>
+    </div>
+    <div class="modal fade" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Testing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="mapWindow" 
+                            width="760" 
+                            height="450" 
+                            frameborder="0" 
+                            style="border:0" 
+                            src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=pizza+near+77388"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 
-        
 
-
-
-    <div class="table container">
-            <div class="row">
-                <div class="col-sm-3"><p>Chinese Food</p>
-                <img src= "pictures/ChineseFood.jpg" id="chineseImg"> 
-                </div>
-                <div class="col-sm-3"><p>Italian Food</p>
-                <img src= "pictures/ItalianFood.jpeg" id ="italianImg">
-                </div>
-                <div class="col-sm-3"><p>Japanese Food</p>
-                <img src= "pictures/japaneseFood.jpg" id="japaneseImg">
-              </div>
-            </div>  
-            <div class="row">
-                <div class= "col-sm-3"><p>Indian Food</p>
-                <img src= "pictures/IndianFood.jpg" id="indianImg">
-            </div>
-                <div class="col-sm-3"><p>Thai Food</p>
-                <img src= "pictures/ThaiFood.jpg" id="thaiImg">
-                </div>
-                <div class="col-sm-3"><p>Mediterranean Food</p>
-                <img src= "pictures/mediterranean.jpg" id="medImg">
-
-                </div>
-            </div>
-    </div>
-
-
-
-
-
-
-   
-    <script src="js/WhereDaFoodFrontPage.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
     <script src="js/google.api.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjYpPpsOQYeTdlW_5CL09rBKHsXSbkrto&callback=initMap"></script>
-
-    
-    
-
-
- 
 
 
 
 </body>
-
-
 
 </html>

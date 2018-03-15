@@ -1,37 +1,9 @@
-#map {
-    height: 100%;
-  }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  #floating-panel {
-    position: absolute;
-    top: 10px;
-    left: 25%;
-    z-index: 5;
-    background-color: #fff;
-    padding: 5px;
-    border: 1px solid #999;
-    text-align: center;
-    font-family: 'Roboto','sans-serif';
-    line-height: 30px;
-    padding-left: 10px;
-  }
-  #floating-panel {
-    margin-left: -100px;
-  }
-
-  .container {
-      width: 500px;
-      height: 500px;
-  }
-
- #Chinese_Food{
-  width: 50px;
-  height: 100px;
-  background-color: blue
-
-
- }
+.customFont {
+    font-family: 'impact';
+}
+.container {
+    height: 100px;
+}
+p {
+    font-size: 1.5em;
+}
