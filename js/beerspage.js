@@ -3,7 +3,7 @@
 
 
 var map = document.getElementById('mapWindow');
-var loc = "houston";
+var loc = "houston"
 var type = "";
 var fCol = document.getElementById('fCol');
 var sCol = document.getElementById('sCol');
@@ -39,7 +39,7 @@ $(document).ready(function () {
             '<p>' + newBar[x].street + '</p>' +
             '<p>' + newBar[x].city + '</p>' +
             '<p>' + newBar[x].state + '</p>' +
-            '<a href="' + newBar[x].blogmap +  '">' + 'open map</a>' +
+            '<a href="#modalMap" id="' + x + '" role="button" data-toggle="modal">open map</a>' +
             
             
             '</div>')
@@ -53,7 +53,7 @@ $(document).ready(function () {
         '<p>' + newBar[x].street + '</p>' +
         '<p>' + newBar[x].city + '</p>' +
         '<p>' + newBar[x].state + '</p>' +
-        '<a href="' + newBar[x].blogmap +  '">' + 'open map</a>' +
+        '<a href="#modalMap" id="' + x + '" role="button" data-toggle="modal">open map</a>' +
         
         
         '</div>')
@@ -61,3 +61,5 @@ $(document).ready(function () {
 
 })
 
+
+// '<a href="' + newBar[x].blogmap +  '">' + 'open map</a>' +
