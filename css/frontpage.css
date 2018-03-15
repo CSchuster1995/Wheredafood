@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(197, 130, 110);
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'impact';
+    color: white;
+    
+}
+.header{
+
+    height: 200px;
+    padding-top: 30px;
+}
+
+p{
+    font-size: 30px;
+    color: white;
+}
