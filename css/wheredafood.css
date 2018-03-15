@@ -23,7 +23,6 @@
     margin-left: -100px;
   }
 
-  .container {
-      width: 500px;
-      height: 500px;
+  .customFont {
+    font-family: 'Lobster', cursive;
   }

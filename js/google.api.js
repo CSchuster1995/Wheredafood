@@ -1,89 +1,90 @@
-// (function() { 
-//     var url = "https://www.google.com/maps/search/?api=1&query=McDonalds+seattle+wa;"
-//     var apiKey = "AIzaSyAjYpPpsOQYeTdlW_5CL09rBKHsXSbkrto";
-//     var httpRequest;
-//     makeRequest();
+
+// google search API
+var map = document.getElementById('mapWindow');
+var loc = "houston";
+var type = "";
+
+var american = document.getElementById('american')
+var mexican = document.getElementById('mexican')
+var indian = document.getElementById('indian')
+var chinese = document.getElementById('chinese')
+var german = document.getElementById('german')
+var italian = document.getElementById('italian')
 
 
 
-//     function makeRequest() {
-//         httpRequest = new XMLHttpRequest();
-//         httpRequest.onreadystatechange = responseMethod;
-//         httpRequest.open('GET', url + '&key=' + apiKey);
-//         httpRequest.send();
-//     }
+american.addEventListener('click', function() {
+  
+    type = "american+cuisine";
+    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
+    
+})
 
-//     function responseMethod() {
-//         if (httpRequest.readyState === 4) {
-//             if (httpRequest.status === 200) {
-//                 updatedUISuccess(httpRequest.responseText);
-//             }else {
-//                 updatedUIError();
-//             }
-//         }
+mexican.addEventListener('click', function() {
+    type = "mexican+cuisine";
+    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
 
-//         function toggleStreetView() {
-//             var toggle = panorama.getVisible();
-//             if (toggle == false) {
-//                 panorama.setVisible(true);
-//             } else {
-//                 panorama.setVisible(false);
-//             }
-//         }
+})
+
+indian.addEventListener('click', function() {
+    type = "indian+cuisine";
+    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
+
+})
+
+chinese.addEventListener('click', function() {
+    type = "chinese+cuisine";
+    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
+
+})
+
+german.addEventListener('click', function() {
+    type = "german+cuisine";
+    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
+
+})
+
+italian.addEventListener('click', function() {
+    type = "italian+cuisine";
+    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
+console.log(italian)
+})
 
 
 
 
+// Zomato API
 
-var panorama;
 
-function initMap() {
-    var astorPlace = { lat: 40.729884, lng: -73.990988 };
+// var zomKey = "bd5dfbb9276d36c0b9e8c4e99625e114";
+// var newData = "";
 
-    // Set up the map
-    var map = new google.maps.Map(document.getElementById('map'), {
-        center: astorPlace,
-        zoom: 18,
-        streetViewControl: false
-    });
+// $(document).ready(function () {
+//     $.ajax({
+//         url: "https://developers.zomato.com/api/v2.1/cities?q=" + loc,
+//         type: "GET",
+//         dataType: "json",
+//         headers: { "user-key": "bd5dfbb9276d36c0b9e8c4e99625e114" },
+//         success:function(data){
+            
+//             newData = data.location_suggestions[0].id;
 
-    // Set up the markers on the map
-    var cafeMarker = new google.maps.Marker({
-        position: { lat: 40.730031, lng: -73.991428 },
-        map: map,
-        icon: 'https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=cafe|FFFF00',
-        title: 'Cafe'
-    });
-
-    var bankMarker = new google.maps.Marker({
-        position: { lat: 40.729681, lng: -73.991138 },
-        map: map,
-        icon: 'https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=dollar|FFFF00',
-        title: 'Bank'
-    });
-
-    var busMarker = new google.maps.Marker({
-        position: { lat: 40.729559, lng: -73.990741 },
-        map: map,
-        icon: 'https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=bus|FFFF00',
-        title: 'Bus Stop'
-    });
-
-    // We get the map's default panorama and set up some defaults.
-    // Note that we don't yet set it visible.
-    panorama = map.getStreetView();
-    panorama.setPosition(astorPlace);
-    panorama.setPov(/** @type {google.maps.StreetViewPov} */({
-        heading: 265,
-        pitch: 0
-    }));
-}
-
-function toggleStreetView() {
-    var toggle = panorama.getVisible();
-    if (toggle == false) {
-        panorama.setVisible(true);
-    } else {
-        panorama.setVisible(false);
-    }
-}
+//             $(document).ready(function () {
+//                 $.ajax({
+//                     url: "https://developers.zomato.com/api/v2.1/search?entity_id=" + newData + "&entity_type=city&establishment_type=81",
+//                     type: "GET",
+//                     dataType: "json",
+//                     headers: { "user-key": "bd5dfbb9276d36c0b9e8c4e99625e114" },
+//                     success:function(data){
+//                         newList = data;
+                        
+//                     },
+                    
+//                 }); 
+//             });
+            
+//         },
+        
+//     }); 
+// });
+// var newList = "";
