@@ -5,6 +5,7 @@ var loc = prompt("Which city are you in?");
 var type = "";
 var modaltitle = document.getElementById('modalTitle')
 
+var japanese = document.getElementById('japanese')
 var american = document.getElementById('american')
 var mexican = document.getElementById('mexican')
 var indian = document.getElementById('indian')
@@ -119,6 +120,14 @@ cuban.addEventListener('click', function() {
     map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
     
 })
+
+japanese.addEventListener('click', function() {
+    modaltitle.textContent = "Japanese Cuisine";
+    type = "japanese+cuisine";
+    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
+    
+})
+
 
 
 
