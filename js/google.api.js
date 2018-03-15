@@ -8,6 +8,7 @@ var american = document.getElementById('american')
 var mexican = document.getElementById('mexican')
 var indian = document.getElementById('indian')
 var chinese = document.getElementById('chinese')
+var greek = document.getElementById('greek')
 
 
 american.addEventListener('click', function() {
@@ -34,6 +35,11 @@ chinese.addEventListener('click', function() {
     map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
 
 })
+
+greek.addEventListener('click', function(){
+    type = "greek+cuisine";
+    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
+});
 
 
 

@@ -1,6 +1,6 @@
 
 .customFont {
-    font-family: 'Lobster', cursive;
+    font-family: 'impact';
 }
 .container {
     height: 100px;
@@ -8,3 +8,4 @@
 p {
     font-size: 1.5em;
 }
+
