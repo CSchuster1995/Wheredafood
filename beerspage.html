@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WhereDaFood?</title>
+
     <link rel="stylesheet" href="css/wheredafood.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
-
 <body>
     <div class="jumbotron customFont" style="color:white; background-color: #C05746">
         <div class="container">
             <h1 class="display-4">WhereDaFood?</h1>
-            <p class="lead">Food Truck Locator</p>
+            <p class="lead">Drink Locator - You look thirsty</p>
         </div>
     </div>
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6">
-                <a href="#modalMap" id="american" role="button" data-toggle="modal">
-                    <img src="images/american.jpeg" alt="american">
-                </a>
-                <a href="#modalMap" id="mexican" role="button" data-toggle="modal">
-                    <img src="images/mexican.jpeg" alt="mexican">
-                </a>
+            <div class="col-lg-6" id="fCol">
+               
             </div>
-            <div class="col-lg-6">
-                <a href="#modalMap" id="indian" role="button" data-toggle="modal">
-                    <img src="images/indian.jpeg" alt="american">
-                </a>
-                <a href="#modalMap" id="chinese" role="button" data-toggle="modal">
-                    <img src="images/chinese.jpeg" alt="chinese">
-                </a>
+            <div class="col-lg-6" id="sCol">
+                
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
@@ -54,7 +45,7 @@
                             height="450" 
                             frameborder="0" 
                             style="border:0" 
-                            src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=pizza+near+77388"
+                            src="http://beermapping.com/maps/blogproxy.php?locid=1151&amp;d=1&amp;type=norm"
                         allowfullscreen>
                     </iframe>
                 </div>
@@ -78,10 +69,7 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
-    <script src="js/google.api.js"></script>
-
-
+    <script src="js/beerspage.js"></script>
 
 </body>
-
 </html>
