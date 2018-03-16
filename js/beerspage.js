@@ -62,4 +62,3 @@ $(document).ready(function () {
 })
 
 
-// '<a href="' + newBar[x].blogmap +  '">' + 'open map</a>' +
