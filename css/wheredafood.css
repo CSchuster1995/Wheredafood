@@ -1,0 +1,16 @@
+
+
+
+.customFont {
+    font-family: 'impact';
+}
+.container {
+    height: 100px;
+}
+p {
+    font-size: 1.5em;
+}
+img{
+    max-width: 50%;
+}
+
