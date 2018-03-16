@@ -9,7 +9,11 @@ var fCol = document.getElementById('fCol');
 var sCol = document.getElementById('sCol');
 
 
+
 var newBar = "";
+
+
+
 
 $(document).ready(function () {
     $.ajax({
@@ -18,13 +22,15 @@ $(document).ready(function () {
         dataType: "json",
         success: function (data) {
             newBar = data;
+            
             for (i = 0; i < 30; i += 2) {
                 firstCol(i);
+                
 
             }
             for (j = 1; j < 30; j += 2) {
                 secondCol(j);
-
+                
             }
 
         },
@@ -34,12 +40,12 @@ $(document).ready(function () {
     function firstCol(x) {
         
         
-        $('#fCol').append('<div>' +
+        $('#fCol').append('<div id="' + x + '">' +
             '<h3>' + newBar[x].name + '</h3>' +
             '<p>' + newBar[x].street + '</p>' +
             '<p>' + newBar[x].city + '</p>' +
             '<p>' + newBar[x].state + '</p>' +
-            '<a href="#modalMap" id="' + x + '" role="button" data-toggle="modal">open map</a>' +
+            '<a href="#modalMap" role="button" restaurant data-toggle="modal">open map</a>' +
             
             
             '</div>')
@@ -48,13 +54,13 @@ $(document).ready(function () {
 
     function secondCol(x) {
        
-        $('#sCol').append('<div>' +
+        $('#sCol').append('<div id="' + x + '">' +
         '<h3>' + newBar[x].name + '</h3>' +
         '<p>' + newBar[x].street + '</p>' +
         '<p>' + newBar[x].city + '</p>' +
         '<p>' + newBar[x].state + '</p>' +
-        '<a href="#modalMap" id="' + x + '" role="button" data-toggle="modal">open map</a>' +
-        
+        '<a href="#modalMap" role="button" restaurant data-toggle="modal">open map</a>' +
+         
         
         '</div>')
     }
@@ -62,4 +68,10 @@ $(document).ready(function () {
 })
 
 
-// '<a href="' + newBar[x].blogmap +  '">' + 'open map</a>' +
+    
+$(document).on('click', [data="restaurant"], function(e) {
+    console.log(e);
+    console.log(e.target.parentElement); 
+})
+
+
