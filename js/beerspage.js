@@ -32,31 +32,31 @@ $(document).ready(function () {
     });
 
     function firstCol(x) {
-        
-        
+
+
         $('#fCol').append('<div>' +
             '<h3>' + newBar[x].name + '</h3>' +
             '<p>' + newBar[x].street + '</p>' +
             '<p>' + newBar[x].city + '</p>' +
             '<p>' + newBar[x].state + '</p>' +
             '<a href="#modalMap" id="' + x + '" role="button" data-toggle="modal">open map</a>' +
-            
-            
+
+
             '</div>')
 
     }
 
     function secondCol(x) {
-       
+
         $('#sCol').append('<div>' +
-        '<h3>' + newBar[x].name + '</h3>' +
-        '<p>' + newBar[x].street + '</p>' +
-        '<p>' + newBar[x].city + '</p>' +
-        '<p>' + newBar[x].state + '</p>' +
-        '<a href="#modalMap" id="' + x + '" role="button" data-toggle="modal">open map</a>' +
-        
-        
-        '</div>')
+            '<h3>' + newBar[x].name + '</h3>' +
+            '<p>' + newBar[x].street + '</p>' +
+            '<p>' + newBar[x].city + '</p>' +
+            '<p>' + newBar[x].state + '</p>' +
+            '<a href="#modalMap" id="' + x + '" role="button" data-toggle="modal">open map</a>' +
+
+
+            '</div>')
     }
 
 })
