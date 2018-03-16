@@ -12,9 +12,18 @@ h1{
 
     height: 200px;
     padding-top: 30px;
+    border: solid rgb(131, 92, 9);
+    border-block-end: blue
+    
 }
 
 p{
     font-size: 30px;
     color: white;
+}
+
+#theCity{
+
+align-content: center;
+
 }

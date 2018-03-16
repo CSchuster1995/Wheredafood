@@ -18,6 +18,7 @@ var cuban= document.getElementById('cuban')
 var brazilian= document.getElementById('brazilian');
 var french= document.getElementById('french');
 var caribbean= document.getElementById('caribbean');
+var italin= document.getElementById('italian')
 
 american.addEventListener('click', function() {
     loc = "77003";
@@ -38,7 +39,7 @@ indian.addEventListener('click', function() {
 
 })
 
-chinese.addEventListener('click', function() {
+chinese.addEventListener('click', function(){
     type = "chinese+cuisine";
     map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
 
@@ -108,11 +109,19 @@ mongolian.addEventListener('click', function(){
     map.src= "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
 });
 
+italin.addEventListener('click', function() {
+    type = "italian+cuisine";
+    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
+
+})
+
 // Zomato API
 
 
 var zomKey = "bd5dfbb9276d36c0b9e8c4e99625e114";
 var newData = "";
+
+
 
 $(document).ready(function () {
     $.ajax({
