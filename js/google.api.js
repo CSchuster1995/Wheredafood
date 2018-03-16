@@ -60,11 +60,6 @@ african.addEventListener('click', function () {
     map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "cuisine" + "+" + loc;
 })
 
-thai.addEventListener('click', function () {
-    type = "thai+cuisine"
-    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "cuisine" + "+" + loc;
-})
-
 german.addEventListener('click', function () {
     type = "german+cuisine"
     map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "cuisine" + "+" + loc;
@@ -82,11 +77,6 @@ thai.addEventListener('click', function () {
 
 vegan.addEventListener('click', function () {
     type = "vegan+cuisine"
-    map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "cuisine" + "+" + loc;
-})
-
-thai.addEventListener('click', function () {
-    type = "thai+cuisine"
     map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "cuisine" + "+" + loc;
 })
 
