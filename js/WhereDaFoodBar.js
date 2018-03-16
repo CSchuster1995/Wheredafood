@@ -9,7 +9,7 @@ var fCol = document.getElementById('fCol');
 var sCol = document.getElementById('sCol');
 
 
-
+ 
 var newBar = "";
 
 
@@ -70,8 +70,9 @@ $(document).ready(function () {
 
     
 $(document).on('click', [data="restaurant"], function(e) {
-    console.log(e);
-    console.log(e.target.parentElement); 
+    type = e.target.parentElement.firstChild.textContent;
+    mapWindow.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + type + "near" + loc;
 })
 
 
+// e.target.parentElement.firstChild.textContent
