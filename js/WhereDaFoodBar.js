@@ -45,7 +45,7 @@ $(document).ready(function () {
             '<p>' + newBar[x].street + '</p>' +
             '<p>' + newBar[x].city + '</p>' +
             '<p>' + newBar[x].state + '</p>' +
-            '<a href="#modalMap" role="button" restaurant data-toggle="modal">open map</a>' +
+            '<a href="#modalMap" role="button" restaurant data-toggle="modal">See On A Map</a>' +
             
             
             '</div>')
@@ -59,7 +59,7 @@ $(document).ready(function () {
         '<p>' + newBar[x].street + '</p>' +
         '<p>' + newBar[x].city + '</p>' +
         '<p>' + newBar[x].state + '</p>' +
-        '<a href="#modalMap" role="button" restaurant data-toggle="modal">open map</a>' +
+        '<a href="#modalMap" role="button" restaurant data-toggle="modal">See On A Map</a>' +
          
         
         '</div>')
