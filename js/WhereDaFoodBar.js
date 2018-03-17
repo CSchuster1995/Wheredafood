@@ -3,10 +3,11 @@
 
 
 var map = document.getElementById('mapWindow');
-var loc = "houston"
+var loc = "houston";
 var type = "";
 var fCol = document.getElementById('fCol');
 var sCol = document.getElementById('sCol');
+var modalTitle = document.getElementById('modalTitle')
 
 
  
@@ -40,7 +41,7 @@ $(document).ready(function () {
     function firstCol(x) {
         
         
-        $('#fCol').append('<div id="' + x + '">' +
+        $('#fCol').append('<div class="bars">' +
             '<h3>' + newBar[x].name + '</h3>' +
             '<p>' + newBar[x].street + '</p>' +
             '<p>' + newBar[x].city + '</p>' +
@@ -54,7 +55,7 @@ $(document).ready(function () {
 
     function secondCol(x) {
        
-        $('#sCol').append('<div id="' + x + '">' +
+        $('#sCol').append('<div class="bars">' +
         '<h3>' + newBar[x].name + '</h3>' +
         '<p>' + newBar[x].street + '</p>' +
         '<p>' + newBar[x].city + '</p>' +
@@ -72,6 +73,7 @@ $(document).ready(function () {
 $(document).on('click', [data="restaurant"], function(e) {
     type = e.target.parentElement.firstChild.textContent;
     mapWindow.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + type + "near" + loc;
+    modalTitle.textContent = type;
 })
 
 
