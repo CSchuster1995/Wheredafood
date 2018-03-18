@@ -8,12 +8,11 @@ a:hover {
     text-decoration: none;
 }
 
-
-.customFont {
+h1 {
     font-family: 'impact';
 }
 
-p{
+p {
     font-size: 30px;
     color: white;
 }
@@ -21,7 +20,7 @@ p{
     font-size:1.3em;
 }
 
-img{
+img {
     max-width: 50%;
 }
 

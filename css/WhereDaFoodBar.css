@@ -11,10 +11,10 @@ a:hover {
     color: #77B6D1;
 }
 
-.container {
-    
-    font-family: 'Lobster', cursive;
+h1 {
+    font-family: 'impact';
 }
+
 
 .bars {
     font-family: 'Playfair Display', serif;
@@ -23,7 +23,7 @@ a:hover {
     margin-top: 10px;
     padding-left: 10px;
     border-left: solid 3px #403D39;
-    background-color: #eee;
+    background-color: #BF9A95;
 
 }
 
