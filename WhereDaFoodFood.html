@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet">
-    <link rel="stylesheet" href="css/wheredafoodfood.css">
+    <link rel="stylesheet" href="css/WhereDaFoodFood.css">
 
 
 
@@ -31,18 +31,25 @@
         <div class="container">
             <div class="row d-flex align-items-end">
                 <div class="col-lg-6">
-                    <h1 class="display-3">WhereDaFood?</h1>
-                    <p class="lead">Restaurant Locator</p>
+                    <a href="index.html"><h1 class="display-3">WhereDaFood?</h1></a>
+                    <p id="subtitle" class="lead">Restaurant Locator - You Look Hungry</p>
                 </div>
                 <div class="col-lg-6">
                     <form id="cityForm">
+                            
                         <label style="font-size: 1.5em; ">Enter a city</label>
                         <input class="form-control form-control-sm" type="text" placeholder="Search" style="width:50%">
+
                     </form>
                 </div>
+               
             </div>
 
         </div>
+    </div>
+
+    <div>
+        <h1 id="header">Houston</h1>
     </div>
 
     <div class="container-fluid">
@@ -151,6 +158,11 @@
                     <p style="text-align:center; font-weight: bold;">CARIBBEAN</p>
                 </a>
 
+                <a href="#modalMap" id="japanese" class="foods" role="button" data-toggle="modal">
+                    <img src="images/japan-min.jpg" alt="caribbean" class="img-responsive img-thumbnail" style="height: 500px; width: 700px;">
+                    <p style="text-align:center; font-weight: bold;">JAPANESE</p>
+                </a>
+
             </div>
         </div>
 
@@ -161,7 +173,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Map Results</h5>
+                    <h5 class="modal-title" id="modalTitle">Map Results</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -188,7 +200,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
-    <script src="js/google.api.js"></script>
+    <script src="js/WhereDaFoodFood.js"></script>
 
 
 

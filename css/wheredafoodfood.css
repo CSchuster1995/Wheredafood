@@ -1,19 +1,42 @@
 
+a {
+    color: white;
+    
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+}
 
 
 .customFont {
     font-family: 'impact';
 }
-.container {
-    height: 100px;
+
+p{
+    font-size: 30px;
+    color: white;
 }
-p {
-    font-size: 1.5em;
+#subitle {
+    font-size:1.3em;
 }
+
 img{
     max-width: 50%;
 }
 
 .foods {
     color: #77B6D1;
+}
+
+#header {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+    font-weight: bolder;
+    background-color: #eee;
+    height: 100px;
+    padding-top: 20px;
 }
