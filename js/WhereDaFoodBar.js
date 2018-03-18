@@ -50,7 +50,7 @@ var test = function(){
             '<p>' + newBar[x].street + '</p>' +
             '<p>' + newBar[x].city + '</p>' +
             '<p>' + newBar[x].state + '</p>' +
-            '<a href="#modalMap" role="button" restaurant data-toggle="modal">See On A Map</a>' +
+            '<a href="#modalMap" role="button" class="linkB" restaurant data-toggle="modal">See On A Map</a>' +
             
             
             '</div>')
@@ -64,7 +64,7 @@ var test = function(){
         '<p>' + newBar[x].street + '</p>' +
         '<p>' + newBar[x].city + '</p>' +
         '<p>' + newBar[x].state + '</p>' +
-        '<a href="#modalMap" role="button" restaurant data-toggle="modal">See On A Map</a>' +
+        '<a href="#modalMap" role="button" class="linkB" restaurant data-toggle="modal">See On A Map</a>' +
          
         
         '</div>')
