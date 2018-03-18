@@ -1,0 +1,72 @@
+
+
+body{
+
+    background-color: rgb(197, 130, 110);
+}
+.title{
+    height:300px;
+    widows: 200px;
+    border: 40px solid rgb(128, 68, 0);
+    border-radius:30px;
+    padding-top:30px;
+    
+}
+
+.table{
+
+margin: auto;
+width: 60%;
+border: 15px solid rgb(97, 43, 8);
+padding: 10px;
+border-radius: 12px;
+padding-top:30px;
+overflow: scroll;
+
+}
+
+.pictures{
+    display:block;
+    margin:auto;
+    
+
+
+}
+img{
+border-radius: 12px;
+display: block;
+margin: auto;
+border:10px solid gainsboro;
+
+
+
+
+
+
+
+}
+
+#chineseImg{
+    height:200px;
+    width:200px;
+}
+#italianImg{
+    height:200px;
+    width:200px;
+}
+
+#japaneseImg{
+    height:200px;
+    width:200px;
+}
+#indianImg{
+    height:200px;
+    width:200px;
+}
+#thaiImg{
+    height:200px;
+    width:200px;
+}
+#medImg{
+    height:200px;
+    width:200px;
