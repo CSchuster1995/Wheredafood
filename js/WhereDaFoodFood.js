@@ -1,6 +1,5 @@
 
 // google search API
-$(document).ready(function () {
     
     var map = document.getElementById('mapWindow');
     var loc = "houston";
@@ -100,5 +99,4 @@ $(document).ready(function () {
         map.src = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBhAxU0T3tdTd04TZMIi0ZXXu3fuDpELok&q=" + "+" + type + "+" + "near" + "+" + loc;
 
     })
-
-});
+    
