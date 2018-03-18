@@ -17,6 +17,10 @@ var newBar = "";
 
 
 $(document).ready(function () {
+    test()
+})
+
+var test = function(){
     $.ajax({
         url: "http://beermapping.com/webservice/loccity/8d98787dfd590fc6a4834ce375b946a5/" + loc + "&s=json",
         type: "GET",
@@ -65,9 +69,7 @@ $(document).ready(function () {
         
         '</div>')
     }
-
-})
-
+}
 
     
 $(document).on('click', [data="restaurant"], function(e) {
@@ -77,4 +79,16 @@ $(document).on('click', [data="restaurant"], function(e) {
 })
 
 
-// e.target.parentElement.firstChild.textContent
+$('#cityForm').submit(function(e) {
+    e.preventDefault();
+    var newLoc = $('#cityForm');
+    loc = newLoc[0].lastChild.previousSibling.value;
+    console.log(newLoc[0].lastChild.previousSibling.value);
+    newLoc[0].lastChild.previousSibling.value = "";
+    $('#fCol').empty();
+    $('#sCol').empty();
+    $('#header').text(loc)
+    test();
+    
+
+})

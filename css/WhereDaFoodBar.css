@@ -1,8 +1,22 @@
 .container {
     font-family: 'Lobster', cursive;
-    font-size: 2em;
 }
+
+
 
 .bars {
     font-family: 'Playfair Display', serif;
+    margin-left: 50px
+}
+
+#header {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    background-color: #eee;
+    height: 100px;
+    padding-top: 20px;
 }
