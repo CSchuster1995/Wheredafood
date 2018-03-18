@@ -1,8 +1,20 @@
-.container {
-    font-family: 'Lobster', cursive;
+a {
+    color: white;  
 }
 
+a:hover {
+    color: white;
+    text-decoration: none;
+}
 
+.linkB {
+    color: #77B6D1;
+}
+
+.container {
+    
+    font-family: 'Lobster', cursive;
+}
 
 .bars {
     font-family: 'Playfair Display', serif;
@@ -12,7 +24,6 @@
     padding-left: 10px;
     border-left: solid 3px #403D39;
     background-color: #eee;
-    
 
 }
 
