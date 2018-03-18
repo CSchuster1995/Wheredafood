@@ -24,7 +24,7 @@ looking for and give you some results on a map.
 * **Second** We built a page to display the food types and prompt the user for their location.
 * **Third** We created a bar finding app using a newer api caller beermapper. It wasn't as straight forward to use as googles api so it took some work to get it running properly.
 * **Fourth** We build the beer page, much like the food page, which would list the top bars in an area and offer you a map to that location.
-* **Finally** We created a home page in which you could choose; Are you hungry? Or are you thirst?
+* **Finally** We created a home page in which you could choose; Are you hungry? Or are you thirsty?
 
 
 
