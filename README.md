@@ -3,6 +3,15 @@
 A gastronomic site that helps you to find food and drink near whatever area you're in. It will ask you what and where you're
 looking for and give you some results on a map.
 
+<img src="images/screenshots/screenshot1.png">
+
+WhereDaFood? Restaurant Page
+
+
+<img src="images/screenshots/screenshot2.png">
+
+WhereDaFood? Bars Page
+
 ## Built With
 
 * [HTML5]
