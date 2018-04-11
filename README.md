@@ -14,9 +14,11 @@ WhereDaFood? Bars Page
 
 ## Built With
 
-* [HTML5]
+* HTML5
 * [BOOTSTRAP 4](https://getbootstrap.com/) - CSS framework
 * [JQUERY](https://jquery.com/) - Javascript framework
+* AJAX - API parsing
+
 
 
 
