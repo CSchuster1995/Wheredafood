@@ -24,7 +24,7 @@ WhereDaFood? Bars Page
 
 ## Authors
 
-* **Connor Schuster** - [SChuster1995](https://github.com/CShuster1995)
+* **Connor Schuster** - [CShuster1995](https://github.com/CShuster1995)
 * **Nate Izuora** - [Nathan Izuora](https://github.com/NathanIzuora)
 * **Jesse Kent Weaver** - [H0bbyist](https://github.com/H0bbyist)
 
