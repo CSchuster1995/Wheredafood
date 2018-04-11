@@ -24,9 +24,9 @@ WhereDaFood? Bars Page
 
 ## Authors
 
-* **Connor Schuster** - *Initial work* - [SChuster1995](https://github.com/CShuster1995)
-* **Nate Izuora** - *Initial work* - [Nathan Izuora](https://github.com/NathanIzuora)
-* **Jesse Kent Weaver** - *Initial work* - [H0bbyist](https://github.com/H0bbyist)
+* **Connor Schuster** - [SChuster1995](https://github.com/CShuster1995)
+* **Nate Izuora** - [Nathan Izuora](https://github.com/NathanIzuora)
+* **Jesse Kent Weaver** - [H0bbyist](https://github.com/H0bbyist)
 
 
 #Proccess (shortened)
