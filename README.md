@@ -29,7 +29,7 @@ WhereDaFood? Bars Page
 * **Jesse Kent Weaver** - [H0bbyist](https://github.com/H0bbyist)
 
 
-#Proccess (shortened)
+## Proccess (shortened)
 
 * **First** We created the food searching function using google maps api.
 * **Second** We built a page to display the food types and prompt the user for their location.
